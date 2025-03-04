@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Аренда квартиры</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <header>
+      <div class="container header-container">
+         <h1>Аренда квартиры</h1>
+         <nav>
+            <ul>
+               <li><a href="#home">Главная</a></li>
+               <li><a href="#gallery">Галерея</a></li>
+               <li><a href="#booking">Бронирование</a></li>
+               <li><a href="#reviews">Отзывы</a></li>
+               <li><a href="#video">Видео</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <section id="home">
+      <div class="container container-home">
+         <div class="content__home">
+            <h2>О нашей квартире</h2>
+            <p>Предлагаем уютные и современные апартаменты для краткосрочной и долгосрочной аренды.
+               Квартира полностью укомплектована всем необходимым для комфортного проживания.
+               Удобное расположение, развитая инфраструктура и домашний уют — все для вашего удобства!</p>
+         </div>
+
+         <img src="images/header.jpg" alt="#" class="img-home">
+
+
+      </div>
+   </section>
+   <section id="gallery">
+      <div class="container">
+         <div class="gallery-container">
+            <p>"Уютный закрытый двор с детской площадкой, беседкой и мангалом — идеальное место для отдыха и приятного
+               времяпрепровождения на свежем воздухе."</p>
+            <img src="images/dvor.png" alt="Фото 1">
+         </div>
+         <div class="gallery-container">
+            <img src="images/basss.png" alt="Фото 1">
+            <p>"Небольшой, но очень привлекательный бассейн, окружённый зеленью, создаёт атмосферу уюта и спокойствия,
+               идеально подходя для тех, кто ищет расслабление в тени летнего солнца. Наслаждайтесь летними днями в
+               нашем комплексе!"</p>
+         </div>
+
+      </div>
+   </section>
+
+   <section id="booking">
+      <h2>Доступные даты</h2>
+      <input type="date" id="bookingDate">
+      <button id="bookButton">Забронировать</button>
+      <p id="bookingMessage"></p>
+   </section>
+
+   <section id="reviews">
+      <div class="container container-reviews">
+         <h2>Отзывы</h2>
+         <ul id="reviewsList">
+            <li>Отличное место! – Иван</li>
+         </ul>
+         <textarea id="reviewText" placeholder="Оставьте отзыв"></textarea>
+         <button id="submitReview">Оставить отзыв</button>
+      </div>
+   </section>
+
+   <!-- <div class="container">
+      <h2>Форма бронирования</h2>
+      <form onsubmit="event.preventDefault(); submitBooking();">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required><br><br>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+  
+          <label for="start-date">Дата начала:</label>
+          <input type="date" id="start-date" name="start-date" required><br><br>
+  
+          <label for="end-date">Дата окончания:</label>
+          <input type="date" id="end-date" name="end-date" required><br><br>
+  
+          <button type="submit" id="bookButtonTwo">Забронировать</button>
+
+          <p id="bookingMessageTwo"></p>
+      </form>
+   </div>
+    -->
+
+   <section id="video">
+      <h2>Видео</h2>
+      <video width="80%" controls>
+         <source src="video.mp4" type="video/mp4">
+         Ваш браузер не поддерживает видео.
+      </video>
+   </section>
+
+   <footer>
+      <p>&copy; 2025 Аренда квартиры. Все права защищены.</p>
+   </footer>
+
+   <script src="js/main.js"></script>
+</body>
+
+</html>

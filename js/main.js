@@ -94,3 +94,10 @@ function updateAvailablePeriods() {
     
     document.getElementById('available-periods').innerText = "Свободные периоды: " + availablePeriods.join(', ');
 }
+
+
+document.addEventListener("DOMContentLoaded", function(){
+   document.getElementById("burger").addEventListener("click", function(){
+    document.querySelector("header").classList.toggle("open")
+   })
+ })
